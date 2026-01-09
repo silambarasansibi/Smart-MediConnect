@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.health-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #f1f8ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.health-title {
+  font-size: 26px;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.health-subtitle {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 30px;
+}
+
+.health-card {
+  background: #ffffff;
+  padding: 30px;
+  width: 320px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.health-select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.health-select:focus {
+  outline: none;
+  border-color: #00bcd4;
+}
+
+.health-btn {
+  width: 100%;
+  padding: 12px;
+  background: #00bcd4;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.health-btn:disabled {
+  background: #b2ebf2;
+  cursor: not-allowed;
+}
+
+.health-btn:hover:not(:disabled) {
+  background: #0097a7;
+}

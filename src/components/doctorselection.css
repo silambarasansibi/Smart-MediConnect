@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.doctor-wrapper {
+  min-height: 100vh;
+  background: #f4f8fb;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.doctor-title {
+  font-size: 26px;
+  color: #2c3e50;
+  margin-bottom: 6px;
+}
+
+.doctor-subtitle {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.doctor-list {
+  width: 100%;
+  max-width: 600px;
+}
+
+.doctor-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: white;
+  padding: 18px;
+  margin-bottom: 18px;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.doctor-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+}
+
+.doctor-card.active {
+  border-left: 6px solid #00bcd4;
+  background: #e0f7fa;
+}
+
+.doctor-icon {
+  font-size: 36px;
+}
+
+.doctor-info h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.doctor-info p {
+  margin: 4px 0;
+  font-size: 13px;
+  color: #7f8c8d;
+}
+
+.doctor-time {
+  font-size: 14px;
+  color: #00796b;
+  font-weight: 600;
+}
+
+.book-btn {
+  margin-top: 35px;
+  padding: 14px 50px;
+  background: #00bcd4;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.book-btn:disabled {
+  background: #b2ebf2;
+  cursor: not-allowed;
+}
+
+.book-btn:hover:not(:disabled) {
+  background: #0097a7;
+}
