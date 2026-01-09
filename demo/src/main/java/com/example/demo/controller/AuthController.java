@@ -1,0 +1,21 @@
+package com.example.demo.controller;
+
+import com.example.demo.model.User;
+import com.example.demo.service.AuthService;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/api")
+public class AuthController {
+
+    private final AuthService service;
+
+    public AuthController(AuthService service) {
+        this.service = service;
+    }
+
+    @PostMapping("/login")
+    public User login(@RequestBody User user) {
+        return service.login(user.getEmail(), user.getPassword());
+    }
+}
