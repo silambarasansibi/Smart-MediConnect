@@ -82,9 +82,9 @@ Smart MediConnect provides a professional and scalable digital healthcare soluti
 
 ## 👨‍💻 Team Members
 
-* Vajin P
-* Vishal N
 * Silambarasan P
+* Vishal N
+* Vajin P
 
 
 ---
